@@ -1,4 +1,6 @@
+import Particles from "react-tsparticles";
 import self_logo from "../assets/hello.png";
+import ParticleBackground from "../components/particleBackground";
 import TechStack from "./techStack";
 
 export default function homePage() {
@@ -7,7 +9,7 @@ export default function homePage() {
       <div className="flex flex-col justify-center flex-wrap items-center">
         <div
           className="flex flex-col md:flex-nowrap h-fit md:w-max md:items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mt-20 mb-10
-        sm:items-center sm:flex-warp"
+        sm:items-center sm:flex-warp animate-fade-up animate-once animate-duration-500 animate-ease-linear animate-normal"
         >
           <img
             className="object-cover max-h-60 rounded-t-lg h-60 w-auto max-[640px]:h-20 max-[640px]:aspect-auto max-[640px]:max-h-20 max-[640px]:w-fit"

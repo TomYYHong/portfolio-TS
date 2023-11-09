@@ -8,6 +8,8 @@ export default {
       'sx': '300px',
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
 
