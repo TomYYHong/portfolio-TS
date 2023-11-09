@@ -99,3 +99,19 @@ export function SwiftLogo() {
     </div>
   );
 }
+
+export function TailwindCSSLogo() {
+  return (
+    <div className="center relative inline-block select-none whitespace-nowrap rounded-lg bg-blue-400 py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white">
+      <div className="mt-px">TailwindCSS</div>
+    </div>
+  );
+}
+
+export function AxiosLogo() {
+  return (
+    <div className="center relative inline-block select-none whitespace-nowrap rounded-lg bg-purple-400 py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white">
+      <div className="mt-px">Axios</div>
+    </div>
+  );
+}

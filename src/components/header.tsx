@@ -25,7 +25,7 @@ export default function Header() {
                 <Link to="/experience">
                   <button
                     type="button"
-                    className="space-x-2 items-center border-0 rounded-full p-3 bg-neutral-600 hover:bg-[#bbb745] hover:brightness-100 duration-500"
+                    className="space-x-2 items-center border-0 rounded-full p-3 bg-neutral-600 hover:bg-[#bbb745] hover:brightness-100 duration-500 text-white"
                   >
                     Experience
                   </button>
@@ -35,7 +35,7 @@ export default function Header() {
                 <Link to="/projects">
                   <button
                     type="button"
-                    className="space-x-2 items-center border-0 rounded-full p-3 bg-neutral-600 hover:bg-[#bbb745] hover:brightness-100 duration-500"
+                    className="space-x-2 items-center border-0 rounded-full p-3 bg-neutral-600 hover:bg-[#bbb745] hover:brightness-100 duration-500 text-white"
                   >
                     Projects
                   </button>
@@ -45,7 +45,7 @@ export default function Header() {
                 <Link to="/contact">
                   <button
                     type="button"
-                    className="space-x-2 items-center border-0 rounded-full p-3 bg-neutral-600 hover:bg-[#bbb745] hover:brightness-100 duration-500"
+                    className="space-x-2 items-center border-0 rounded-full p-3 bg-neutral-600 hover:bg-[#bbb745] hover:brightness-100 duration-500 text-white"
                   >
                     Contact
                   </button>

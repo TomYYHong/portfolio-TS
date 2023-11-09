@@ -1,24 +1,48 @@
 import MentalHelper from "../assets/FYP1.png";
-import { FirebaseLogo, SwiftLogo } from "./techStack";
+import charityFinder from "../assets/charityFinder.png";
+import ChatMe from "../assets/ChatMe.png";
+import {
+  AxiosLogo,
+  FirebaseLogo,
+  ReactLogo,
+  SwiftLogo,
+  TailwindCSSLogo,
+} from "./techStack";
 import ProjectCard from "./card/projectCard";
 import { card } from "./card/card";
 
 function projectPage() {
   const List: card[] = [
     {
+      imgUrl: ChatMe,
+      title: "Chat Me",
+      description:
+        "A live chat room application that implements Google Firebase authentication so users need to be logged in to their Google account to chat with other users!",
+      badgeList: [ReactLogo, TailwindCSSLogo, FirebaseLogo],
+      gitHubUrl: "https://github.com/TomYYHong/ChatMe/tree/main",
+      liveUrl: "https://main--chatme-tomhong.netlify.app/",
+    },
+    {
+      imgUrl: charityFinder,
+      title: "Charity Finder",
+      description: "A website help you to find the charity you interested in!",
+      badgeList: [ReactLogo, TailwindCSSLogo, AxiosLogo],
+      gitHubUrl: "https://github.com/TomYYHong/charity-finder/tree/main",
+      liveUrl: "https://charity-finder-tomhong.netlify.app/",
+    },
+    {
       imgUrl: MentalHelper,
       title: "Mental Helper",
       description:
-        "A Swift 4 app with Firebase designed to let users record their daily emotions and analyze their mood changes, provide users with a calendar to view their records and resources for users to seek help.",
+        "An application designed to let users record their daily emotions and analyze their mood changes, provide users with a calendar to view their records and resources for users to seek help.",
       badgeList: [SwiftLogo, FirebaseLogo],
       gitHubUrl:
         "https://github.com/TomYYHong/Swift-Firebase--Final-year-project",
     },
-    // Add more projects as needed
   ];
 
   return (
-    <div>
+    <div className="flex flex-row  space-x-4">
       {List.map((item, index) => (
         <ProjectCard key={index} {...item} />
       ))}

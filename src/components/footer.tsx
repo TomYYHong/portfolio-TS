@@ -12,7 +12,11 @@ export default function footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faEnvelope} size="2xl"></FontAwesomeIcon>
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            color="white"
+            size="2xl"
+          ></FontAwesomeIcon>
         </a>
         <a
           href="https://github.com/TomYYHong"
@@ -20,7 +24,7 @@ export default function footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faGithub} size="2xl" />
+          <FontAwesomeIcon icon={faGithub} size="2xl" color="white" />
         </a>
         <a
           href="https://www.linkedin.com/in/yuk-yu-hong-b43665158/"
@@ -28,7 +32,7 @@ export default function footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+          <FontAwesomeIcon icon={faLinkedin} size="2xl" color="white" />
         </a>
         <a
           href="https://drive.google.com/file/d/13azOVChxzY6jz8NntS2VNHkhWt5vRGf9/view"
@@ -37,7 +41,7 @@ export default function footer() {
           rel="noopener noreferrer"
         >
           Resume
-          <FontAwesomeIcon icon={faFilePdf} size="2xl" />
+          <FontAwesomeIcon icon={faFilePdf} size="2xl" color="white" />
         </a>
       </div>
     </footer>
