@@ -6,7 +6,7 @@ import TechStack from "./techStack";
 export default function homePage() {
   return (
     <>
-      <div className="flex flex-col justify-center flex-wrap items-center">
+      <div className="flex flex-col justify-center flex-wrap items-center mb-20">
         <div
           className="flex flex-col md:flex-nowrap h-fit md:w-max md:items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mt-20 mb-10
         sm:items-center sm:flex-warp animate-fade-up animate-once animate-duration-500 animate-ease-linear animate-normal"

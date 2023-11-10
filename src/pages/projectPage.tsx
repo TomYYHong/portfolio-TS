@@ -42,7 +42,7 @@ function projectPage() {
   ];
 
   return (
-    <div className="flex flex-row  space-x-4">
+    <div className="flex flex-row  space-x-4 mb-20">
       {List.map((item, index) => (
         <ProjectCard key={index} {...item} />
       ))}

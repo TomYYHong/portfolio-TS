@@ -1,11 +1,10 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../assets/brand_logo.png";
-import { useEffect, useState } from "react";
 
 export default function Header() {
   return (
-    <header>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 inset-x-0 top-0">
+    <div className="z-10 relative inset-x-0 top-0 mb-10">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 ">
         <div className="max-w-screen-xl flex flex-nonwrap items-center justify-between mx-auto p-4">
           <div className="flex justify-start items-center ">
             <Link to="/">
@@ -60,6 +59,6 @@ export default function Header() {
           </div>
         </div>
       </nav>
-    </header>
+    </div>
   );
 }
