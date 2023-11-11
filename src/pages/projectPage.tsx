@@ -7,6 +7,7 @@ import {
   ReactLogo,
   SwiftLogo,
   TailwindCSSLogo,
+  TypeScriptLogo,
 } from "./techStack";
 import ProjectCard from "./card/projectCard";
 import { card } from "./card/card";
@@ -18,7 +19,7 @@ function projectPage() {
       title: "Chat Me",
       description:
         "A live chat room application that implements Google Firebase authentication so users need to be logged in to their Google account to chat with other users!",
-      badgeList: [ReactLogo, TailwindCSSLogo, FirebaseLogo],
+      badgeList: [ReactLogo, TypeScriptLogo, TailwindCSSLogo, FirebaseLogo],
       gitHubUrl: "https://github.com/TomYYHong/ChatMe/tree/main",
       liveUrl: "https://main--chatme-tomhong.netlify.app/",
     },
@@ -26,7 +27,7 @@ function projectPage() {
       imgUrl: charityFinder,
       title: "Charity Finder",
       description: "A website help you to find the charity you interested in!",
-      badgeList: [ReactLogo, TailwindCSSLogo, AxiosLogo],
+      badgeList: [ReactLogo, TypeScriptLogo, TailwindCSSLogo, AxiosLogo],
       gitHubUrl: "https://github.com/TomYYHong/charity-finder/tree/main",
       liveUrl: "https://charity-finder-tomhong.netlify.app/",
     },

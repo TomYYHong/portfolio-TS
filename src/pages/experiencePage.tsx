@@ -2,7 +2,7 @@ import React from "react";
 
 function experiencePage() {
   return (
-    <div className="content-center animate-fade-down animate-once animate-ease-out animate-normal w-2/3 mb-5 bg-gray-900 bg-opacity-75 mb-20">
+    <div className="content-center animate-fade-down animate-once animate-ease-out animate-normal w-2/3 mb-5 bg-gray-900 bg-opacity-75 mb-40">
       <ol className="relative border-l border-gray-200 dark:border-gray-700">
         <li className="mb-10 ml-4">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:text-white"></div>

@@ -13,7 +13,7 @@ function projectCard(card: card) {
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {card.description}
         </p>
-        <div className="mb-5 mt-5 space-x-2">
+        <div className="mb-5 mt-5 space-x-2 space-y-2 justify-start">
           {card.badgeList.map((Badge, index) => (
             <Badge key={index} />
           ))}
