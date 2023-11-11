@@ -1,6 +1,4 @@
-import Particles from "react-tsparticles";
 import self_logo from "../assets/hello.png";
-import ParticleBackground from "../components/particleBackground";
 import TechStack from "./techStack";
 
 export default function homePage() {

@@ -1,5 +1,3 @@
-import React from "react";
-
 function experiencePage() {
   return (
     <div className="content-center animate-fade-down animate-once animate-ease-out animate-normal w-2/3 mb-5 bg-gray-900 bg-opacity-75 mb-40">
