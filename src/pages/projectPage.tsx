@@ -1,9 +1,12 @@
 import MentalHelper from "../assets/FYP1.png";
 import charityFinder from "../assets/charityFinder.png";
 import ChatMe from "../assets/ChatMe.png";
+import NextDoor from "../assets/nextDoor.png";
 import {
   AxiosLogo,
   FirebaseLogo,
+  MongoDBLogo,
+  NestJSLogo,
   ReactLogo,
   SwiftLogo,
   TailwindCSSLogo,
@@ -14,6 +17,21 @@ import { card } from "./card/card";
 
 function projectPage() {
   const List: card[] = [
+    {
+      imgUrl: NextDoor,
+      title: "NextDoor",
+      description:
+        "A application that help you explore the event, post and stuff to exchange within your neighborhood!",
+      badgeList: [
+        ReactLogo,
+        TypeScriptLogo,
+        TailwindCSSLogo,
+        MongoDBLogo,
+        NestJSLogo,
+        AxiosLogo,
+      ],
+      gitHubUrl: "https://github.com/orgs/cantek-nextdoor/repositories",
+    },
     {
       imgUrl: ChatMe,
       title: "Chat Me",
