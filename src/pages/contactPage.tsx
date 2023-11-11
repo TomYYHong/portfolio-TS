@@ -54,7 +54,7 @@ const ContactPage = () => {
         import.meta.env.VITE_MAIL_USER_KEY
       )
       .then(
-        (result) => {
+        () => {
           // Reset the form after successful submission
           setValues({
             name: "",
