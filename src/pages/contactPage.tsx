@@ -48,10 +48,10 @@ const ContactPage = () => {
 
     emailjs
       .sendForm(
-        "service_38htnoj",
-        "template_pzzh79j",
+        import.meta.env.VITE_MAIL_SERVICE_KEY,
+        import.meta.env.VITE_MAIL_TEMPLATE_KEY,
         formElement,
-        "yi1eag8ZFMBluU_F3"
+        import.meta.env.VITE_MAIL_USER_KEY
       )
       .then(
         (result) => {
@@ -72,41 +72,67 @@ const ContactPage = () => {
   };
 
   return (
-    <Formik
-      initialValues={{
-        name: "",
-        email: "",
-        message: "",
-      }}
-      validationSchema={validationSchema}
-      onSubmit={onSubmit}
-    >
-      {({ errors, touched }) => (
-        <Form className="z-10 flex flex-col" id="contactForm">
-          {showBanner && (
-            <Banner
-              message="Form submitted successfully!"
-              onClose={() => setShowBanner(false)}
+    <div className="z-10 bg-slate-800 w-3/6 ">
+      <Formik
+        initialValues={{
+          name: "",
+          email: "",
+          message: "",
+        }}
+        validationSchema={validationSchema}
+        onSubmit={onSubmit}
+      >
+        {({ errors, touched }) => (
+          <Form
+            className="z-10 flex flex-col items-center bg-gray-700"
+            id="contactForm"
+          >
+            {showBanner && (
+              <Banner
+                message="Form submitted successfully!"
+                onClose={() => setShowBanner(false)}
+              />
+            )}
+            <h1 className="font-extrabold text-4xl text-gray-50">
+              Please feel free to contact me!
+            </h1>
+            <br />
+            <label htmlFor="name" className="text-gray-50 text-xl">
+              May i have your name?
+            </label>
+            <Field name="name" className="w-2/5 bg-gray-500" />
+            {errors.name && touched.name && <div>{errors.name}</div>}
+            <br />
+            <label htmlFor="email" className="text-gray-50 text-xl">
+              May i have your email address?
+            </label>
+            <Field
+              name="email"
+              validate={validateEmail}
+              className="w-2/5 bg-gray-500"
             />
-          )}
-          <h1>Please feel free to contact me!</h1>
-          <br />
-          <label htmlFor="name">May i have your name?</label>
-          <Field name="name" />
-          {errors.name && touched.name && <div>{errors.name}</div>}
-          <br />
-          <label htmlFor="email">May i have your email address?</label>
-          <Field name="email" validate={validateEmail} />
-          {errors.email && touched.email && <div>{errors.email}</div>}
-          <br />
-          <label htmlFor="message">Any message?</label>
-          <Field name="message" />
-          {errors.message && touched.message && <div>{errors.message}</div>}
+            {errors.email && touched.email && <div>{errors.email}</div>}
+            <br />
+            <label htmlFor="message" className="text-gray-50 text-xl">
+              Any message?
+            </label>
+            <Field
+              name="message"
+              className="mb-2 w-2/5 min-h-30 bg-gray-500"
+              component="textarea"
+            />
+            {errors.message && touched.message && <div>{errors.message}</div>}
 
-          <button type="submit">Submit</button>
-        </Form>
-      )}
-    </Formik>
+            <button
+              type="submit"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Submit
+            </button>
+          </Form>
+        )}
+      </Formik>
+    </div>
   );
 };
 
